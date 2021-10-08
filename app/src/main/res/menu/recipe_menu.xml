@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mi_action_widget"
+        android:icon="@drawable/ic_baseline_favorite_border_24"
+        android:orderInCategory="1"
+        android:title="@string/menu_item_star_title"
+        app:showAsAction="always" />
+
+</menu>

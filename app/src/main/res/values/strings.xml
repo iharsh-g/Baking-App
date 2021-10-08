@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Baking App</string>
+
+    <string name="recipe_image">RECIPE IMAGE</string>
+
+    <!-- DUMMY CONTROLS TEXT FOR XML LAYOUTS DESIGN TIME -->
+    <string translatable="false" name="dummy_widget_recipe_title">RECIPE TITLE</string>
+    <string translatable="false" name="dummy_widget_ingredients">INGREDIENTS\nINGREDIENTS\nINGREDIENTS\nINGREDIENTS</string>
+    <string translatable="false" name="dummy_step_short_description">Step short Description</string>
+    <string translatable="false" name="dummy_step_full_description">STEP FULL DESCRIPTION</string>
+    <string translatable="false" name="dummy_ingredient_name">Ingredient Name</string>
+    <string translatable="false" name="dummy_step_ingredient_dose">1 CUP</string>
+    <string translatable="false" name="dummy_recipe_name">RECIPE NAME</string>
+
+    <!-- No Network Alert Dialog -->
+    <string name="main.no_network">No network detected!\nThis application requires network connection</string>
+    <string name="main.no_network_try_again">Try Again</string>
+    <string name="main.no_network_close">Close App</string>
+
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="menu_item_star_title">Recipe Steps on Widget</string>
+    <string name="widget_recipe_added">Recipe Added to Widget</string>
+    <string name="widget_recipe_removed">Recipe Removed from Widget</string>
+    <string name="recipe_introduction">Step</string>
+    <string name="step">Step</string>
+
+    <string name="tab_title_ingredients">Ingredients</string>
+    <string name="tab_title_steps">Steps</string>
+</resources>

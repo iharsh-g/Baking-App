@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#424040">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/main_layout_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_master"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noNetworkLayout"
+            android:layout_centerInParent="true">
+
+
+            <ImageView
+                android:id="@+id/noNetworkImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/no_network" />
+
+            <TextView
+                android:id="@+id/noNetworkText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/noNetworkImage"
+                android:text="No Internet Connection"
+                android:textColor="#B5B0B0"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/retry_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/noNetworkText"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#FA1B1B"
+                android:layout_centerHorizontal="true"
+                android:text="RETRY"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>
