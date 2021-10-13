@@ -46,8 +46,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
         setTitle(getString(R.string.app_name));
 
-        AppUtils.setIdleResourceTo(false);
-
         context = this;
         GridLayoutManager layoutManager = new GridLayoutManager(this, 1);
         binding.rvMaster.setLayoutManager(layoutManager);
@@ -89,8 +87,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                 });
                 binding.rvMaster.setAdapter(adapter);
                 binding.mainLayoutSwipe.setRefreshing(false);
-
-                AppUtils.setIdleResourceTo(true);
             }
 
             @Override
@@ -104,8 +100,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                         .setNegativeButton(R.string.main_no_network_try_again, (dialog, id) -> loadJSON())
                         .setPositiveButton(R.string.main_no_network_close, (dialog, id) -> finish());
                 builder.create().show();
-
-                AppUtils.setIdleResourceTo(false);
             }
         });
     }

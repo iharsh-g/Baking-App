@@ -40,11 +40,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 
-    // Espresso dependencies
-    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.4.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.4.0'
-    implementation 'androidx.test.espresso:espresso-idling-resource:3.4.0'
-
     implementation 'com.squareup.picasso:picasso:2.71828'
 
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'

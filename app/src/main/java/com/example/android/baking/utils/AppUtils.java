@@ -8,10 +8,6 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.webkit.MimeTypeMap;
 
-import androidx.test.espresso.IdlingResource;
-
-import com.example.android.baking.testing.SimpleIdlingResource;
-
 public class AppUtils {
     private AppUtils(){ }
 
@@ -64,21 +60,6 @@ public class AppUtils {
      */
     public static String capitalizeFirstLetter(String input){
         return input.substring(0, 1).toUpperCase() + input.substring(1);
-    }
-
-    private static SimpleIdlingResource sIdlingResource;
-    public static IdlingResource getIdlingResource() {
-        if (sIdlingResource == null) {
-            sIdlingResource = new SimpleIdlingResource();
-        }
-        return sIdlingResource;
-    }
-
-    public static void setIdleResourceTo(boolean isIdleNow){
-        if (sIdlingResource == null) {
-            sIdlingResource = new SimpleIdlingResource();
-        }
-        sIdlingResource.setIdleState(isIdleNow);
     }
 
     /**
